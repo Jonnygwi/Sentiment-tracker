@@ -42,17 +42,17 @@ function getSentiment(text){
     textComparison();
       
     // Work out the sentiment 
-    if (negativeWordCount < positiveWordCount) {
-        return 3
+    if (positiveWordCount >= (negativeWordCount * 1.5)) {
+        return "Happy"
         console.log("Happy")
         // Background will change to green if there is a positive analysis
-    } else if (negativeWordCount == positiveWordCount){
-        return 2
-        console.log("Neutral")
+    } else if (negativeWordCount >= (positiveWordCount * 1.5)){
+        return "Sad"
+        console.log("Sad")
         // Background will change to blue if there is a neutral analysis
     } else {
-        return 1
-        console.log("Sad")
+        return "Unknown"
+        console.log("Neutral")
         // Background will change to red if there is a negative analysis
     };
     
