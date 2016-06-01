@@ -1,13 +1,14 @@
 # Sentiment-tracker
 
-Open the master directory in terminal and type 'node server' to run the server.
+## Running the app
+1. Open the master directory in terminal and type `node server` to run the server.
 
-Navigate to localhost:3000 in your browser
+2. Navigate to localhost:3000 in your browser
 
-Enter the sentence you want to analyse and it will reply with whether it is Happy, Sad or Unkown
+3. Enter the sentence you want to analyse and it will reply with whether it is Happy, Sad or Unkown
 
-The words that are recognised as being Happy are; delight, delighted, delightful, happy, glad, joy, joyful, merry and pleasant.
-The words that are recognised as being Sad are; disappointed, miserable, sad, sorrow and unhappy.
+The words that are recognised as being Happy are - delight, delighted, delightful, happy, glad, joy, joyful, merry and pleasant.
+The words that are recognised as being Sad are - disappointed, miserable, sad, sorrow and unhappy.
 
 To be classed as happy or sad there has to be a ratio of 1.5 more respective words then its counter.
 
